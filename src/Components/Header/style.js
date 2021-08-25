@@ -27,4 +27,16 @@ export const Nav = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+
 `
+
+export const Link = styled.a`
+    font-size:23px;
+    color:${(props)=> props.theme.cores.laranja};
+    text-decoration: none;
+    &:active{
+       color :${props => props.theme.cores.amarelo} ;
+    }
+
+`
+

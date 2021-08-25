@@ -1,9 +1,12 @@
-import React from 'react'
 import * as S from './style'
+import Button from '../../Components/Button'
+
+
 const Home = () => {
+   
     return (
         <S.Container>
-            Home
+           
         </S.Container>
     )
 }
