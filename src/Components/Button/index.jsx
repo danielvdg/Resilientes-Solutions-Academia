@@ -1,13 +1,10 @@
-import React,{useEffect,useState} from 'react'
+import React from 'react'
 import * as S from './style'
 const Button = (props) => {
     
-    
-    
-    
     return (
         <S.Container>
-            <S.Button></S.Button>
+            <S.Button>{props.children}</S.Button>
             
         </S.Container>
     )
