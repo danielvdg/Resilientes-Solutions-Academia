@@ -1,7 +1,7 @@
 import React from 'react'
 
 import * as S from './style'
-import logo from '../../Assets/pngegg.png'
+import logo from '../../Assets/logo.png'
 const Header = () => {
     return (
        <S.Container>

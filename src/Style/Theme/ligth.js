@@ -1,4 +1,6 @@
+
 export const ligth ={
+    
     titulo:'ligth',
     cores:{
         primaria: '#f2f2f2',
@@ -17,7 +19,7 @@ export const ligth ={
     },
     fonts:{
         texto: '"Montserrat", sans-serif',
-        titulo: '"Pacifico", cursive',
+        titulo: '"Poppins", sans-serif',
         subtitulo: '"Amatic SC", cursive'
     }
     
