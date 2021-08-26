@@ -1,18 +1,24 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-display: grid;
-width: 100%;
-height: 100vh;
+    display: grid;
+    width: 100%;
+    height: 100vh;
 
-grid-template-areas: 
-'title title title'
-'subtitle subtitle subtitle'
-'plan plan picture';
-gap:20px;
-grid-template-rows: 40px 60px auto;
-background-color:${props=> props.theme.cores.preto2} ;
-background-attachment: fixed;
+    grid-template-areas: 
+    'title title title'
+    'subtitle subtitle subtitle'
+    'plan plan picture';
+    gap:20px;
+    grid-template-rows: 40px 60px auto;
+    background-color:${props=> props.theme.cores.preto2} ;
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+
 
 `
 
@@ -52,8 +58,8 @@ export const cardPlano = styled.div`
 `
 export const ul = styled.ul`
     width: 450px;
-    height: 90%;
-    border: 1px solid ${props=> props.theme.cores.laranja} ;
+    height: 600px;
+    border: 4px solid ${props=> props.theme.cores.laranja} ;
     padding: 6%;
     background-color:${props=> props.theme.cores.talco} ;
     color:${props=> props.theme.cores.preto} ;
@@ -73,18 +79,51 @@ export const li = styled.li`
     align-items: center;
 
 `
-
+export const planoLista = styled.p`
+    width: 100%;
+    background: ${props=> props.theme.cores.preto2};
+`
 export const card =styled.div`
 grid-area: picture;
 display: flex;
 width: 100%;
 height: 100%;
-display: flex;
 
 
 >img{
     width: 300px;
     height: 500px;
+    animation: pulse 0.7s infinite;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+    }
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -webkit-filter: brightness(100%);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    -webkit-filter: brightness(200%);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+  100% {
+    transform: scale(1.1);
+    filter: brightness(200%);
+  }
 }
 
 

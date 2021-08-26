@@ -8,9 +8,9 @@ import * as S from "./style";
 const Home = () => {
   return (
     <S.Container>
-            <S.titulo>Escolha um do Nossos Plano</S.titulo>
+            <S.titulo>Escolha um dos Nossos Plano</S.titulo>
 
-            <S.subtitle>Treine o quanto quiser com     nossos planos. 
+            <S.subtitle>Treine o quanto quiser com nossos planos. 
                 Todos oferecem áreas de musculação, aeróbico, 
                 aulas especiais e de ginástica
             </S.subtitle>
@@ -29,7 +29,7 @@ const Home = () => {
             <S.plano>
                <S.cardPlano>
                     <S.ul>
-                        <S.li>Preumim</S.li>
+                        <S.li><S.planoLista>Preumium</S.planoLista></S.li>
                         <S.li>Musculação</S.li>
                         <S.li>Aeróbicos</S.li>
                         <S.li>Aulas</S.li>
