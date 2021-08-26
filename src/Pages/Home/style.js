@@ -109,7 +109,17 @@ export const li = styled.li`
 `
 export const planoLista = styled.p`
     width: 100%;
+    height: 50px;
+    font-size: 30px;
+    display: flex;
     background: ${props=> props.theme.cores.preto2};
+    color: ${props=> props.theme.cores.laranja};
+    font-family: ${props=> props.theme.fonts.titulo} ;
+    font-weight: bold ;
+    text-align:  center;
+    align-items: center;
+    justify-content: center;
+    
 `
 export const card =styled.div`
 grid-area: picture;
