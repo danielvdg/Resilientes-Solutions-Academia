@@ -16,7 +16,7 @@ const Home = () => {
       <S.plano>
         <S.cardPlano>
           <S.ul>
-            <S.li>Básico</S.li>
+            <S.li><S.planoLista>Básico</S.planoLista></S.li>
             <S.li>Musculação</S.li>
             <S.li>Aerobicos</S.li>
             <S.li>R$ 49,99</S.li>
@@ -30,7 +30,7 @@ const Home = () => {
         <S.cardPlano>
           <S.ul>
             <S.li>
-              <S.planoLista>Preumium</S.planoLista>
+              <S.planoLista>Premium</S.planoLista>
             </S.li>
             <S.li>Musculação</S.li>
             <S.li>Aeróbicos</S.li>

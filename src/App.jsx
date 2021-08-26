@@ -9,9 +9,11 @@ import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 import Contato from "./Pages/Contato";
 import NossoTime from "./Pages/NossoTime";
+import Professor from "./Pages/Professor";
 //Import Sytles
 import { ligth } from "./Style/Theme/ligth";
 import * as S from './Style/App.styles'
+
 
 
 
@@ -27,6 +29,7 @@ const App = () => {
               <Route path='/' exact component={Home}></Route>
               <Route path='/contato' exact component={Contato}></Route>
               <Route path='/nossotime' exact component={NossoTime}></Route>
+              <Route path='/professor' exact component={Professor}></Route>
             </Switch>
           <Footer/>
         </BrowserRouter>
