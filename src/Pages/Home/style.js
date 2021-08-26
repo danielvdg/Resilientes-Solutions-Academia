@@ -18,10 +18,16 @@ export const Container = styled.div`
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    
 
 
 `
+export const section =styled.section`
+  width: 100%;
+  height: 100vh;
 
+  
+`
 export const titulo = styled.h1`
 grid-area: title;
 grid-column: 1/ 4;
@@ -55,6 +61,28 @@ export const cardPlano = styled.div`
     color: ${props=> props.theme.cores.branco};
     display: flex;
     justify-content: center;
+    opacity:0;
+    transform: translateX(20px);
+    -webkit-animation: animeLeft .5s forwards;
+    animation: animeLeft .5s forwards;
+
+     @keyframes animeLeft {
+      0%{opacity:0;
+        transform:translateX(20px);
+      }
+      100%{opacity:100;
+        transform:translateX(-20px);
+      }
+    } 
+    
+    @keyframes animeLeft {
+      0%{-webkit-opacity:0;
+        -webkit-transform:translateX(20px);
+      }
+      100%{-webkit-opacity:100;
+        -webkit-transform:translateX(-20px);
+      }
+    } 
 `
 export const ul = styled.ul`
     width: 450px;
@@ -79,7 +107,10 @@ export const li = styled.li`
     align-items: center;
 
 `
-
+export const planoLista = styled.p`
+    width: 100%;
+    background: ${props=> props.theme.cores.preto2};
+`
 export const card =styled.div`
 grid-area: picture;
 display: flex;
