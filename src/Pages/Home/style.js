@@ -79,7 +79,10 @@ export const li = styled.li`
     align-items: center;
 
 `
-
+export const planoLista = styled.p`
+    width: 100%;
+    background: ${props=> props.theme.cores.preto2};
+`
 export const card =styled.div`
 grid-area: picture;
 display: flex;
