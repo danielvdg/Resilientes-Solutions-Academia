@@ -15,7 +15,8 @@ export const ligth ={
         azulTifani:'#2EC4B6',
         azulVerdeCrayola:'#1982C4',
         platina:'#E8E9EB',
-        talco:'#F1F5F2'
+        talco:'#F1F5F2',
+        footer:'#738099'
     },
     fonts:{
         texto: '"Montserrat", sans-serif',
