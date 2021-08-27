@@ -1,10 +1,194 @@
 import styled from "styled-components";
+//  import imgPlano from '../../Img/imgPlano.jpg'
 
 export const Container = styled.div`
+    width: 100%;
+    height: auto;
+   
+`
+export const ContainerInfo = styled.section`
     display: grid;
+    background-color:${props=> props.theme.cores.talco};
+    width: 100%;
+    height: 100%;
+    grid-template-areas: 
+    'title title title '
+    'subtitle subtitle subtitle '
+    'info info info ';
+    gap:20px;
+    grid-template-rows: 40px 160px auto;
+    grid-template-columns: repeat(3,30%);
+    justify-items: center;
+    margin-left: 5%;
+    margin-top: 20px;
+    
+    @media screen and (max-width:1300px){
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+
+    }
+    
+   
+`
+
+export const tituloInfo = styled.h1`
+grid-area: title;
+grid-column: 1/ 4;
+grid-row: 1;
+font-family: ${props=> props.theme.fonts.titulo};
+font-size: 50px;
+width: 100%;
+height: 100%;
+
+justify-self: center;
+text-align: center;
+align-items: center;
+color: ${props=> props.theme.cores.preto};
+
+`
+
+export const subtitleInfo = styled.h2`
+  grid-area: subtitle;
+  grid-row: 2;
+  grid-column: 1/4;
+  width: 100%;
+  height: 100%;
+  margin-top: 1%;
+  text-align: center;
+  margin-top: 1%;
+  font-family: ${props=> props.theme.fonts.subtitulo};
+  color: ${props=> props.theme.cores.preto};
+  font-size: 35px;
+
+`
+
+export const info1 = styled.div`
+  grid-area: info;
+  background-color:${props=> props.theme.cores.azulSafira} ;
+  grid-row: 3;
+  grid-column: 1;
+  width: 95%;
+  height: 95%;
+  
+  @media screen and (max-width:1300px){
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+
+
+    }
+
+  
+
+`
+export const info2 = styled.div`
+  grid-area: info;
+  grid-row: 3;
+  grid-column: 2;
+  width: 95%;
+  height: 95%;
+  
+  
+  >img{
+    width: 100%;
+    height: auto;
+
+    transform: translateX(20px);
+    -webkit-animation: animeLeft .5s forwards;
+    animation: animeLeft .5s forwards;
+
+     @keyframes animeLeft {
+      0%{opacity:0;
+        transform:translateX(20px);
+      }
+      100%{opacity:100;
+        transform:translateX(-20px);
+      }
+    } 
+    
+    @keyframes animeLeft {
+      0%{-webkit-opacity:0;
+        -webkit-transform:translateX(20px);
+      }
+      100%{-webkit-opacity:100;
+        -webkit-transform:translateX(-20px);
+      }
+    } 
+
+  }
+ 
+  
+
+
+`
+export const info3 = styled.div`
+  grid-area: info;
+  background-color:${props=> props.theme.cores.azulSafira} ;
+  grid-row: 3;
+  grid-column: 3;
+  width: 95%;
+  height: 95%;
+  
+  @media screen and (max-width:1300px){
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      
+      align-items: center;
+
+
+    }
+ 
+`
+export const infoTitulo = styled.h1`
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: ${props=> props.theme.fonts.titulo};
+  font-size: 50px;
+`
+
+export const ulInfo = styled.ul`
+  width: 100%;
+  height: 100%;
+  
+
+`
+export const liInfo = styled.li`
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  font-family: ${props=> props.theme.fonts.texto};
+  font-weight: bold;
+  display: flex;
+  text-align: justify;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  justify-content: center;
+  align-items: center;
+
+`
+export const pInfo = styled.p`
+  padding: 8%;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+  width: 100%;
+  height: 600px;
+  font-size: 20px;
+  line-height: 30px;
+  font-family: ${props=> props.theme.fonts.texto};
+
+`
+export const ContainerPlano = styled.section`
+   display: grid;
     width: 100%;
     height: 100vh;
-
     grid-template-areas: 
     'title title title'
     'subtitle subtitle subtitle'
@@ -18,9 +202,22 @@ export const Container = styled.div`
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    @media screen and (max-width: 1300px ){
+        
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    @media screen and (max-height:1000px){
+
+      width: 100%;
+      height: 100%;
+      
+    }
     
-
-
+    
 `
 export const section =styled.section`
   width: 100%;
@@ -28,31 +225,38 @@ export const section =styled.section`
 
   
 `
+
+
 export const titulo = styled.h1`
 grid-area: title;
 grid-column: 1/ 4;
 grid-row: 1;
 font-family: ${props=> props.theme.fonts.titulo};
+font-size: 50px;
 width: 100%;
 height: 100%;
+margin-top: 1%;
 justify-self: center;
 text-align: center;
 align-items: center;
 color: ${props=> props.theme.cores.branco};
 
-
 `
 export const subtitle = styled.h2`
-grid: subtitle;
-grid-row: 2;
-grid-column: 1/4;
-text-align: center;
-font-family: ${props=> props.theme.fonts.subtitulo};
-color: ${props=> props.theme.cores.branco};
+  grid: subtitle;
+  grid-row: 2;
+  grid-column: 1/4;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top: 1%;
+  font-family: ${props=> props.theme.fonts.subtitulo};
+  color: ${props=> props.theme.cores.branco};
+  font-size: 35px;
 
 `
 export const plano = styled.div`
-color: ${props=> props.theme.cores.branco};
+  color: ${props=> props.theme.cores.branco};
 `
 export const cardPlano = styled.div`
     grid-area: plan;
@@ -60,6 +264,8 @@ export const cardPlano = styled.div`
     height: 100%;
     color: ${props=> props.theme.cores.branco};
     display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
     justify-content: center;
     opacity:0;
     transform: translateX(20px);
@@ -86,72 +292,96 @@ export const cardPlano = styled.div`
 `
 export const ul = styled.ul`
     width: 450px;
-    height: 600px;
+    height: 800px;
     border: 4px solid ${props=> props.theme.cores.laranja} ;
-    padding: 6%;
+    padding: 2%;
     background-color:${props=> props.theme.cores.talco} ;
-    color:${props=> props.theme.cores.preto} ;
+    color:${props=> props.theme.cores.amarelo} ;
+    font-weight: bold;
+    font-size: 30px;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     flex-direction: column;
+    
+
+    @media screen and (max-width: 1300px ){
+      height  :700px ;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+        
+    }
+    &:hover{
+      border: 4px solid ${props=> props.theme.cores.amarelo}
+      
+    }
     
 `
 export const li = styled.li`
     font-family: ${props=> props.theme.fonts.texto};
     width: 100%;
     height: 20%;
+    text-shadow: #000 2px 3px 2px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  
 
 `
 export const planoLista = styled.p`
     width: 100%;
-    height: 50px;
+    height: 70px;
     font-size: 30px;
     display: flex;
     background: ${props=> props.theme.cores.preto2};
     color: ${props=> props.theme.cores.laranja};
     font-family: ${props=> props.theme.fonts.titulo} ;
     font-weight: bold ;
-    text-align:  center;
+    text-align:center;
     align-items: center;
     justify-content: center;
+    &:hover{
+      color: ${props=> props.theme.cores.amarelo};
+
+    }
     
 `
 export const card =styled.div`
-grid-area: picture;
-display: flex;
-width: 100%;
-height: 100%;
+  grid-area: picture;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top : 5% ;
 
+  >img{
+      width: 350px;
+      height: 600px;
+      animation: pulse 0.7s infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      animation-direction: alternate;
+      -webkit-animation-name: pulse;
+      animation-name: pulse;
+      }
 
->img{
-    width: 300px;
-    height: 500px;
-    animation: pulse 0.7s infinite;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 50px;
-    animation-direction: alternate;
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
+  @-webkit-keyframes pulse {
+    0% {
+      -webkit-transform: scale(1);
+      -webkit-filter: brightness(100%);
+    }
+    100% {
+      -webkit-transform: scale(1.1);
+      -webkit-filter: brightness(200%);
     }
 
-@-webkit-keyframes pulse {
-  0% {
-    -webkit-transform: scale(1);
-    -webkit-filter: brightness(100%);
   }
-  100% {
-    -webkit-transform: scale(1.1);
-    -webkit-filter: brightness(200%);
-  }
-}
 
 @keyframes pulse {
   0% {

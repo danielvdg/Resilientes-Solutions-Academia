@@ -1,11 +1,6 @@
 import React from 'react'
 import * as S from './style'
 const Button = (props) => {
-    
-
-    
-    
-    
 
     return (
         <S.Container>

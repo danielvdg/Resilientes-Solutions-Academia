@@ -2,16 +2,17 @@ import styled from "styled-components";
 
 export const  Container = styled.div`
     width: 100%;
-    height: 100%;
-    display: flex;
+    height: auto;
     
 `
 export const  footer = styled.footer`
+    width: 100%;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 80px;
+    font-weight: bold;
+    background-color: ${props=> props.theme.cores.footer};
     font-family: ${props=> props.theme.fonts.titulo};
 
     

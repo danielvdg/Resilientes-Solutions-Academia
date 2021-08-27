@@ -31,7 +31,7 @@ const App = () => {
               <Route path='/nossotime' exact component={NossoTime}></Route>
               <Route path='/professor' exact component={Professor}></Route>
             </Switch>
-          <Footer/>
+            <Footer/>
         </BrowserRouter>
       </S.Container>
     </ThemeProvider>

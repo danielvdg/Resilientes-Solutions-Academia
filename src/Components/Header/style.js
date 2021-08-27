@@ -9,7 +9,7 @@ export const Container = styled.div`
     justify-content:space-between;
     padding: 0 15px;
     background-color: ${(props)=>props.theme.cores.preto};
-    
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 `
 
 export const Logo = styled.div`
@@ -28,6 +28,12 @@ export const Nav = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
+    @media screen and (max-width: 1300px ){
+        
+        width: 100%;
+        display: flex;
+        
+    }
 
 `
 
