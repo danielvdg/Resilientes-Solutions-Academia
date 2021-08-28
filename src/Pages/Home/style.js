@@ -329,6 +329,7 @@ export const ul = styled.ul`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-left: 9%;
         
     }
     &:hover{
