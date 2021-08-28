@@ -23,6 +23,7 @@ export const ContainerInfo = styled.section`
     margin-top: 20px;
     
     @media screen and (max-width:1300px){
+      margin-left:0;
       width: 100%;
       height: auto;
       display: flex;
@@ -328,6 +329,7 @@ export const ul = styled.ul`
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-left: 9%;
         
     }
     &:hover{
