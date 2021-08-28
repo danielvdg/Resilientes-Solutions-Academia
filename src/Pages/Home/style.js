@@ -41,6 +41,18 @@ font-family: ${props=> props.theme.fonts.titulo};
 font-size: 50px;
 width: 100%;
 height: 100%;
+text-shadow: 0 1px 0 #ccc, 
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
 
 justify-self: center;
 text-align: center;
@@ -61,6 +73,7 @@ export const subtitleInfo = styled.h2`
   font-family: ${props=> props.theme.fonts.subtitulo};
   color: ${props=> props.theme.cores.preto};
   font-size: 35px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 
 `
 
@@ -71,6 +84,7 @@ export const info1 = styled.div`
   grid-column: 1;
   width: 95%;
   height: 95%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   
   @media screen and (max-width:1300px){
       width: 100%;
@@ -129,11 +143,12 @@ export const info2 = styled.div`
 export const info3 = styled.div`
   grid-area: info;
   background-color:${props=> props.theme.cores.azulSafira} ;
+  font-weight: bold;
   grid-row: 3;
   grid-column: 3;
   width: 95%;
   height: 95%;
-  
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   @media screen and (max-width:1300px){
       width: 100%;
       height: 100%;
@@ -154,6 +169,7 @@ export const infoTitulo = styled.h1`
   align-items: center;
   font-family: ${props=> props.theme.fonts.titulo};
   font-size: 50px;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 `
 
 export const ulInfo = styled.ul`
@@ -344,6 +360,7 @@ export const planoLista = styled.p`
     text-align:center;
     align-items: center;
     justify-content: center;
+    
     &:hover{
       color: ${props=> props.theme.cores.amarelo};
 
