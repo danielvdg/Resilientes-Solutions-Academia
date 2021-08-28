@@ -23,6 +23,7 @@ export const ContainerInfo = styled.section`
     margin-top: 20px;
     
     @media screen and (max-width:1300px){
+      margin-left:0;
       width: 100%;
       height: auto;
       display: flex;
