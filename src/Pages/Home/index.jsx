@@ -1,5 +1,6 @@
 //import Components
 import Button from "../../Components/Button";
+import React,{Link} from "react-router-dom";
 //import imagens
 import imagemPlano from "../../Img/imagem1.png";
 import imgInfo from '../../Img/ImgInfo1.png'
@@ -8,6 +9,8 @@ import imgInfo from '../../Img/ImgInfo1.png'
 import * as S from "./style";
 
 const Home = (props) => {
+  
+
   return (
     <S.Container>
       <S.ContainerInfo>
@@ -65,7 +68,7 @@ const Home = (props) => {
               <S.li>Aerobicos</S.li>
               <S.li>R$ 49,99</S.li>
               <S.li>
-                <Button>Cadastrar</Button>
+              <Link to='/cadastro'><Button>Cadastrar</Button></Link>
               </S.li>
             </S.ul>
           </S.cardPlano>
@@ -83,7 +86,7 @@ const Home = (props) => {
               <S.li>Cadeira de Massagem </S.li>
               <S.li>R$ 99,99</S.li>
               <S.li>
-                <Button>Cadastrar</Button>
+                <Link to='/cadastro'><Button>Cadastrar</Button></Link>
               </S.li>
             </S.ul>
           </S.cardPlano>
