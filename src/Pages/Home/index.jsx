@@ -5,6 +5,7 @@ import React,{Link} from "react-router-dom";
 import imagemPlano from "../../Img/imagem1.png";
 import imgInfo from '../../Img/ImgInfo1.png'
 
+
 //import estilo
 import * as S from "./style";
 
@@ -23,6 +24,7 @@ const Home = (props) => {
           condicionamento cardiorrespiratório, aumenta a densidade óssea e
           garante mais disposição física.
         </S.subtitleInfo>
+        
         <S.info1>
           <S.infoTitulo>Vantagens</S.infoTitulo>
           <S.ulInfo>
@@ -36,7 +38,7 @@ const Home = (props) => {
           </S.ulInfo>
         </S.info1>
         <S.info2 >
-          <img  src={imgInfo} alt='imagem info' />
+          <img src={imgInfo} alt='imagem info' />
         </S.info2>
         <S.info3>
           <S.infoTitulo>Importância</S.infoTitulo>
