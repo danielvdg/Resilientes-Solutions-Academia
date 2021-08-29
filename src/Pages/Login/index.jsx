@@ -1,11 +1,12 @@
 import React from 'react'
 import * as S from './style'
+import User from "../../Components/User";
 
 const Login = () => {
     return (
-        <S.Container>
-                       
-        </S.Container>
+        <S.loginContainer>
+             <User/>      
+        </S.loginContainer>
     )
 }
 

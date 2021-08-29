@@ -2,7 +2,7 @@ import React from 'react'
 import * as S from './style'
 import Button from '../Button'
 
-const UserLogin = () => {
+const User = () => {
 
   return (
     <S.Container>
@@ -23,4 +23,4 @@ const UserLogin = () => {
 }
 
 
-export default UserLogin;
+export default User;
