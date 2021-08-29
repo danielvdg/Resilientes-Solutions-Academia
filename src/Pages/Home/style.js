@@ -34,6 +34,7 @@ export const ContainerInfo = styled.section`
    
 `
 
+
 export const tituloInfo = styled.h1`
 grid-area: title;
 grid-column: 1/ 4;
