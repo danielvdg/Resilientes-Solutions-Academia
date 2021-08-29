@@ -12,7 +12,9 @@ const Header = () => {
            <S.Nav>
                <S.Link href='/contato'>Contato</S.Link>
                <S.Link href='/nossotime'>Nosso Time</S.Link>
-               <S.Link href='/professor'>Professores</S.Link>
+               <S.Link href='/professor'>Portal do Professor</S.Link>
+               <S.Link href='/login'>Login</S.Link>
+
            </S.Nav>
        </S.Container>
     )
