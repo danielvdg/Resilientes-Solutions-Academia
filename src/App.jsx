@@ -11,10 +11,13 @@ import Contato from "./Pages/Contato";
 import NossoTime from "./Pages/NossoTime";
 import Professor from "./Pages/Professor";
 import Login from "./Pages/Login";
-import Cadastro from "./Pages/CadastroDaniel"
+import EsqueceuSenha from "./Pages/EsqueceuSenha";
+import Cadastro from "./Pages/Cadastro/Cadastro"
+
 //Import Sytles
 import { ligth } from "./Style/Theme/ligth";
-import * as S from './Style/App.styles'
+import * as S from './Style/App.styles';
+
 
 
 
@@ -33,8 +36,9 @@ const App = () => {
               <Route path='/nossotime' exact component={NossoTime}></Route>
               <Route path='/professor' exact component={Professor}></Route>
               <Route path='/login' exact component={Login}></Route>
+              <Route path='/esqueceusenha' exact component={EsqueceuSenha}></Route>
               <Route path='/cadastro' exact component={Cadastro}></Route>
-            </Switch>
+            </Switch>            
             <Footer/>
         </BrowserRouter>
       </S.Container>
