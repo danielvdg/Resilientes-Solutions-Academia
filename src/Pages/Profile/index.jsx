@@ -1,8 +1,4 @@
-import { useState,useEffect,useContext} from "react";
-import {Context} from '../../SessionContext';
-
 export default function Profile(props){
-    const { session, handleLogout} = useContext(Context);
 
     return(
         <main>
