@@ -64,8 +64,10 @@ export const timePerfil = styled.div`
     height: 200px;
 
     >img{
-        width: 300px;
-        height: 200px;
+        width: 500px;
+        height: 500px;
+        display: block;
+
     }
     &:hover{
         border-top-left-radius: 10px;
