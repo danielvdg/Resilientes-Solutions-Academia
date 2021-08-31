@@ -13,7 +13,7 @@ export const Container = styled.div`
     gap: 20px;
 
 ` 
-export const profTitulo = styled.div`
+export const timeTitulo = styled.div`
     grid:title;
     grid-column: 1/3;
     grid-row:1;
@@ -57,7 +57,7 @@ export const containerPerfil =styled.div`
     justify-content: space-between;
     
  `
-export const profPerfil = styled.div`
+export const timePerfil = styled.div`
     display:flex;
     justify-content: flex-start;
     width:80%;
