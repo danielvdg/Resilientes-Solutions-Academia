@@ -1,6 +1,6 @@
 import React from 'react'
 import * as S from './style'
-import time from '../../Img/nossotime.pmg'
+import time from '../../Img/nossotime.png'
 
 const NossoTime = () => {
     return (
