@@ -29,7 +29,7 @@ export default function Form(props) {
     const submit = async (e) => {
         e.preventDefault();
     
-        const urlCadastro = 'https://calm-inlet-01792.herokuapp.com/aluno'
+        const urlCadastro = 'https://safe-fjord-35975.herokuapp.com/aluno'
         const options = {
             method: 'POST',
             headers: {'Accept': 'application/json','Content-Type': 'application/json'},
@@ -43,19 +43,8 @@ export default function Form(props) {
 
     }
 
-    const cpf = parseInt(values.cpf)
-    const telefone = parseInt(values.telefone)
-    const idade = parseInt(values.idade)
-    const cep = parseInt(values.cep)
-    const numero = parseInt(values.numero)
-    values.cpf = cpf
-    values.telefone = telefone
-    values.idade = idade
-    values.cep = cep
-    values.numero = numero
-
     return(
-        <form onSubmit={submit}>
+        <form>
             <S.Input value={values.nome} onChange={handleInputChange} name="nome" label="nome"/>
 
             <S.Input value={values.senha} onChange={handleInputChange} name="senha" label="senha"/>
@@ -76,7 +65,7 @@ export default function Form(props) {
 
             <S.Input value={values.numero} onChange={handleInputChange} name="numero" label="numero" type="number"></S.Input>
 
-            <button>Cadastrar</button>
+            <button onClick={submit}>Cadastrar</button>
         </form>   
     )
 }
