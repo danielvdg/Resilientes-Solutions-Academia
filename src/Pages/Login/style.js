@@ -7,7 +7,17 @@ align-items: center;
 flex-direction: column;
 width: 100%;
 height:88vh;
-background: ${props=> props.theme.cores.cinzaEscuro};
+background-image: url(https://images.unsplash.com/photo-1434682881908-b43d0467b798?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80);
+background-repeat: no-repeat;
+background-size: cover;
+bacground-attachment: fixed;
+margin: auto auto;
+
+
+@media screen and (max-width: 800px ){
+    
+    background-size: 186%;
+    background-position: left;
 
 `
 
@@ -24,12 +34,25 @@ export const Form = styled.form`
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 30px;
-    border-radius: 10px;       
+    border-radius: 10px; 
+    opacity: 0.8;
+    box-sizing: border-box; 
+   
+    
+    @media screen and (max-width: 800px ){
+        width  :50% ;
+      
+          
+      }
+      &:hover{
+        border: 4px solid ${props=> props.theme.cores.amarelo}
+        
+      }
 
 
 `
 export const Label = styled.label`
+
 &:hover{
     color: ${props=> props.theme.cores.amarelo};
 
@@ -45,14 +68,13 @@ border: none;
 border-radius: 7px;
 width: 50%;
 margin: 0.5em;
+border-botton: 2px solid;
 
 
-
-`
-export const Message = styled.div`
 
 
 `
+
 export const Link = styled.div`
     color: #b3b3b3;
     font-size: 15px;
@@ -62,6 +84,7 @@ export const Link = styled.div`
    
 
 `
+
 
 export const Button = styled.button`
     font-size: 30px;
@@ -79,3 +102,4 @@ export const Button = styled.button`
         background-color: ${props=> props.theme.cores.platina};
     }
 `
+
