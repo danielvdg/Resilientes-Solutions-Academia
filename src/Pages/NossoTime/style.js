@@ -64,19 +64,12 @@ export const timePerfil = styled.div`
     height: 200px;
 
     >img{
-        width: 500px;
-        height: 500px;
+        width:350px;
+        height: 320px;
         display: block;
 
     }
-    &:hover{
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        animation-name: example;
-        animation-duration: 0.25s;
-        border-left: 8px solid red;
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)
-    }
+    
 
 `
 export const ul = styled.ul`
