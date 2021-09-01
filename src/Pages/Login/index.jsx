@@ -7,8 +7,8 @@ const Login = () => {
     return (
         <S.Container>
       <S.Form>
-        <S.Label htmlFor="label">Nome</S.Label>
-        <S.Input id="label" placeholder="Nome" />              
+        <S.Label htmlFor="label">E-mail</S.Label>
+        <S.Input id="label" placeholder="E-mail" />              
         <S.Label>Senha</S.Label>
         <S.Input placeholder="Senha" />        
         <Button>Enviar</Button>
