@@ -9,7 +9,10 @@ width: 100%;
 height:88vh;
 background-image: url(https://images.unsplash.com/photo-1434682881908-b43d0467b798?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80);
 background-repeat: no-repeat;
-background-size: 100%;
+background-size: cover;
+bacground-attachment: fixed;
+margin: auto auto;
+
 
 @media screen and (max-width: 800px ){
     
@@ -34,6 +37,7 @@ export const Form = styled.form`
     border-radius: 10px; 
     opacity: 0.8;
     box-sizing: border-box; 
+   
     
     @media screen and (max-width: 800px ){
         width  :50% ;
@@ -48,6 +52,7 @@ export const Form = styled.form`
 
 `
 export const Label = styled.label`
+
 &:hover{
     color: ${props=> props.theme.cores.amarelo};
 
@@ -63,6 +68,8 @@ border: none;
 border-radius: 7px;
 width: 50%;
 margin: 0.5em;
+border-botton: 2px solid;
+
 
 
 

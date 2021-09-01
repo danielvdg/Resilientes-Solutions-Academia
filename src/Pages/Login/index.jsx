@@ -8,9 +8,9 @@ const Login = () => {
         <S.Container>
       <S.Form>
         <S.Label htmlFor="label">Nome</S.Label>
-        <S.Input id="label" />              
+        <S.Input id="label" placeholder="Nome" />              
         <S.Label>Senha</S.Label>
-        <S.Input />        
+        <S.Input placeholder="Senha" />        
         <Button>Enviar</Button>
       </S.Form>    
       <S.Link>Equeceu Senha</S.Link>
