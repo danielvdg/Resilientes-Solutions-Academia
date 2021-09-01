@@ -9,6 +9,11 @@ export default function Profile(props){
 
     if(session.aluno>0){
 
+        const url = 'https://safe-fjord-35975.herokuapp.com/aluno/id' + session.aluno
+        const options = {method:'GET'}
+        const getAluno = fetch(url,options)
+        .then(response => response.json)
+        .catch(error => console.log(error))
     return(
         <main>
             <h1>TU TA LOGADO IRMAO</h1>
