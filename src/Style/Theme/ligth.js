@@ -20,9 +20,9 @@ export const ligth ={
         cinzaEscuro:'#242933'
     },
     fonts:{
-        texto: '"Montserrat", sans-serif',
-        titulo: '"Poppins", sans-serif',
-        subtitulo: '"Amatic SC", cursive'
+        texto: '"Hind Siliguri", sans-serif',
+        titulo: '"Hind Siliguri", sans-serif',
+        subtitulo: '"Hind Siliguri", cursive'
     }
     
 }

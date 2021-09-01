@@ -11,7 +11,7 @@ background: ${props=> props.theme.cores.cinzaEscuro};
 
 `
 
-export const Form = styled.div`
+export const Form = styled.form`
     width: 50%;
     height: 50%;
     font-size: 30px;
@@ -29,7 +29,7 @@ export const Form = styled.div`
 
 
 `
-export const Label = styled.div`
+export const Label = styled.label`
 &:hover{
     color: ${props=> props.theme.cores.amarelo};
 
@@ -38,7 +38,7 @@ export const Label = styled.div`
 
 `
 
-export const Input = styled.div`
+export const Input = styled.input`
 padding: 0.5em;
 background:${props=> props.theme.cores.cinzaEscuro};
 border: none;
@@ -49,16 +49,19 @@ margin: 0.5em;
 
 
 `
-export const Message = styled.div`
 
-
-`
-export const Link = styled.div`
+export const Link = styled.Link`
     color: #b3b3b3;
     font-size: 15px;
     &:hover{
         color: ${props=> props.theme.cores.branco};
     }
    
+
+`
+export const Imagem = styled.img`
+    
+width: 100%;
+height: 400px;
 
 `
