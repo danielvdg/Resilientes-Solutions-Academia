@@ -17,7 +17,7 @@ export const ContainerInfo = styled.section`
     'info info info ';
     gap:20px;
     grid-template-rows: 40px 160px auto;
-    grid-template-columns: repeat(3,30%);
+    grid-template-columns: repeat(3,32%);
     margin-left:0;
     justify-items: center;
     margin-top: 20px;
@@ -191,6 +191,8 @@ export const liInfo = styled.li`
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
   justify-content: center;
   align-items: center;
+  
+ 
 
 `
 export const pInfo = styled.p`
@@ -348,6 +350,9 @@ export const li = styled.li`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    >a{
+      text-decoration: none;
+    }
   
 
 `

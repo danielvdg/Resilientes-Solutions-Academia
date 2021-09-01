@@ -108,7 +108,20 @@ export const containerPerfil3 =styled.div`
     
     
 `
-
+export const containerPerfil4 =styled.div`
+    grid-area: perfil3;
+    grid-column: 1/3;
+    grid-row :5 ;
+    width: 100%;
+    height: 250px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    grid-auto-flow: row;
+    
+    
+`
 
 export const profPerfil = styled.div`
     display:flex;
