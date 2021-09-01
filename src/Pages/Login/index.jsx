@@ -28,7 +28,7 @@ const Login = () => {
 
     const url = 'https://safe-fjord-35975.herokuapp.com/aluno/email/' + values.email
     const options = {
-      method:'GET'
+      method:'POST'
     }
     await fetch(url,options)
     .then(response => response.json())
@@ -36,7 +36,25 @@ const Login = () => {
     {
       if(data.result.senha === values.senha)
       {
-        return data.result.id
+        const idAluno = fetch(url,options)
+        .then(response => response.json())
+        .then(data => 
+        {
+          handleLogin(data.result.id)
+          return data.result.id
+        })
+        .catch(error => console.log(error))
+  
+        if(idAluno>0){
+        history.replace('/profile/'+idAluno)
+        } 
+        else 
+        {
+        setIsHidden(false)
+        setTimeout(()=>{
+          setIsHidden(true)
+        },2000)
+        }   
       }
       else
         alert('SENHA ERRADA, BABACA!')
@@ -44,25 +62,7 @@ const Login = () => {
     .catch(error => alert('Login ou senha incorretos'))
  
   
-    const idAluno = await fetch('https://safe-fjord-35975.herokuapp.com/aluno/email/' + values.email)
-      .then(response => response.json())
-      .then(data => 
-      {
-        handleLogin(data.result.id)
-        return data.result.id
-      })
-      .catch(error => console.log(error))
-
-    if(idAluno>0){
-      history.replace('/profile')
-    } 
-    else 
-    {
-      setIsHidden(false)
-      setTimeout(()=>{
-        setIsHidden(true)
-      },2000)
-    } 
+    
   }
 
   if(session.aluno>0){
@@ -81,7 +81,7 @@ const Login = () => {
       </S.Form> 
 
       <Link to="/esqueceusenha">Esqueceu Senha</Link>
-      <Link to="/profile">Cadastre-se</Link>
+      <Link to="/cadastro">Cadastre-se</Link>
 
     </S.Container>
   )
