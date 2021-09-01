@@ -8,7 +8,7 @@ import imgInfo from '../../Img/ImgInfo1.png'
 
 //import estilo
 import * as S from "./style";
-import style from './home.css'
+
 
 const Home = (props) => {
   

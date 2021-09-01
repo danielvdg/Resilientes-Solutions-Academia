@@ -7,7 +7,6 @@ import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 //import Pages
 import Home from "./Pages/Home";
-import Contato from "./Pages/Contato";
 import NossoTime from "./Pages/NossoTime";
 import Professor from "./Pages/Professor";
 import Login from "./Pages/Login";
@@ -35,7 +34,6 @@ const App = () => {
             <Header/>
               <Switch>
                 <Route path='/' exact component={Home}></Route>
-                <Route path='/contato' exact component={Contato}></Route>
                 <Route path='/nossotime' exact component={NossoTime}></Route>
                 <Route path='/professor' exact component={Professor}></Route>
                 <Route path='/login' exact component={Login}></Route>

@@ -10,14 +10,15 @@ height:88vh;
 background-image: url(https://images.unsplash.com/photo-1434682881908-b43d0467b798?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80);
 background-repeat: no-repeat;
 background-size: cover;
-bacground-attachment: fixed;
+background-attachment: fixed;
 margin: auto auto;
 
 
-@media screen and (max-width: 800px ){
+    @media screen and (max-width: 800px ){
     
     background-size: 186%;
     background-position: left;
+    }
 
 `
 
@@ -68,7 +69,7 @@ border: none;
 border-radius: 7px;
 width: 50%;
 margin: 0.5em;
-border-botton: 2px solid;
+border-bottom: 2px solid;
 
 
 
