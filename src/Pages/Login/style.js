@@ -7,8 +7,9 @@ align-items: center;
 flex-direction: column;
 width: 100%;
 height:88vh;
-background: ${props=> props.theme.cores.cinzaEscuro};
-
+background-image: url(https://images.unsplash.com/photo-1434682881908-b43d0467b798?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80);
+background-repeat: no-repeat;
+background-size: 100%;
 `
 
 export const Form = styled.form`
@@ -50,7 +51,7 @@ margin: 0.5em;
 
 `
 
-export const Link = styled.Link`
+export const Link = styled.div`
     color: #b3b3b3;
     font-size: 15px;
     &:hover{
@@ -59,9 +60,4 @@ export const Link = styled.Link`
    
 
 `
-export const Imagem = styled.img`
-    
-width: 100%;
-height: 400px;
 
-`
