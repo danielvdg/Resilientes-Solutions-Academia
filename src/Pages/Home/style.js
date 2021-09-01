@@ -17,7 +17,7 @@ export const ContainerInfo = styled.section`
     'info info info ';
     gap:20px;
     grid-template-rows: 40px 160px auto;
-    grid-template-columns: repeat(3,30%);
+    grid-template-columns: repeat(3,32%);
     margin-left:0;
     justify-items: center;
     margin-top: 20px;
