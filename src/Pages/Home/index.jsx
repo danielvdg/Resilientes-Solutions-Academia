@@ -3,8 +3,8 @@ import Button from "../../Components/Button";
 import React,{Link} from "react-router-dom";
 //import imagens
 import imagemPlano from "../../Img/imagem1.png";
-import imgInfo from '../../Img/ImgInfo1.png'
-import { Animated } from "react-animated-css";
+
+
 
 
 //import estilo
@@ -17,10 +17,9 @@ const Home = (props) => {
   return (
     <S.Container>
       <S.ContainerInfo>
-      <Animated animationIn="zoomIn">
+     
       <S.titulo>Resilientes Solutions Academia</S.titulo>
-      </Animated>
-      <ul>
+       <ul>
         <li><h1>Conquiste o seu corpo perfeito</h1></li>
         <li><h4>Comece</h4></li>
         <li><h1>HOJE</h1></li>
