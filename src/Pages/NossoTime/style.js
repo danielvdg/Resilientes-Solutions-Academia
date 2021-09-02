@@ -69,8 +69,8 @@ export const containerPerfil =styled.div`
     
     
     >img{
-        width:1500px;
-        height:700px;
+        width:100%;
+        height: 700px;
         
 
     }
