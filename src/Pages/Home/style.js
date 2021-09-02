@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import home from '../../Img/home.png'
 //  import imgPlano from '../../Img/imgPlano.jpg'
 
 export const Container = styled.div`
@@ -7,65 +8,69 @@ export const Container = styled.div`
    
 `
 export const ContainerInfo = styled.section`
-
-
-      display: flex;
+      display: grid;
+      grid-template-areas:
+      'title title '
+      'content content ';
+      grid-template-rows: 100px 800px;
+      grid-template-columns: repeat(2,32%);
+      gap: 20px;
+    
       justify-content: center;
       align-items: center;
-      flex-direction: column;
       width: 100%;
       height:100vh;
-      background-image: url(https://images.unsplash.com/photo-1589828695526-c461b4ddc158?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGFiZG9taW5hbCUyMG11c2NsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+      background-image: url(${home});
+      background-position: -1.5% 0;
       background-color: black;
       background-repeat: no-repeat;
-      background-size:50% 100%;
-      bacground-attachment: fixed;
-      z-index: 6;
-      white-space: nowrap;
-      font-size: 49px;
-      line-height: 49px;
-      font-weight: 700;
-      color: rgb(220, 29, 36);
-      letter-spacing: 0px;
-      font-family: "Hind Siliguri";
-      text-transform: uppercase;
-      visibility: inherit;
-      transition: none 0s ease 0s;
-      text-align: inherit;
-      border-width: 0px;
-      margin: 0px;
-      padding: 0px;
-      min-height: 0px;
-      min-width: 0px;
-      max-height: none;
-      max-width: none;
-      opacity: 1;
-      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-      transform-origin: 50% 50% 0px;
-      >ul{
-        width: 40%;
-        height: 700px;
-        color: white;
-        font-size:30px;
-        text-decoration:none;
-        font-weight: 700; 
-        font-family: ${props=>props.theme.fonts.texto}
-      }      
-<<<<<<< HEAD
-      >li{
-        
-        
-      }
-=======
-          
->>>>>>> 6726d398c16e186de5e56a93d1ad551f3c77a545
 
-    @media screen and (max-width:1300px){
-      margin-left:0;
+      background-size:900px 1100px;
+      background-attachment: fixed;
+      font-family: ${props=> props.theme.fonts.subtitulo};
+      text-transform: uppercase;
+       
+
+      >ul{
+        grid-area: content;
+        grid-row: 2;
+        grid-column: 3;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 700px;
+        justify-content: center;
+        color: white;
+        font-size:49px;
+        font-weight: 700; 
+         font-family: ${props=>props.theme.fonts.texto}
+        text-transform: uppercase;
+        list-style: none;
+        
+      }      
+
+         
+          h1{
+          color:${props => props.theme.cores.vermelho};
+        }
+        h4{
+          color: rgb(255,255,255);
+          
+        }
+      } 
+      
+      
+
+
+    @media screen and (max-width:1400px){
+     
       width: 100%;
-      height: auto;
+      height: 1200px;
+      grid-row: 1;
       display: flex;
+      text-align: center;
       flex-direction: column;
+      background-position: center;
 
     }
     
@@ -81,18 +86,7 @@ font-family: ${props=> props.theme.fonts.titulo};
 font-size: 50px;
 width: 100%;
 height: 100%;
-text-shadow: 0 1px 0 #ccc, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 #aaa,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0,.3),
-               0 3px 5px rgba(0,0,0,.2),
-               0 5px 10px rgba(0,0,0,.25),
-               0 10px 10px rgba(0,0,0,.2),
-               0 20px 20px rgba(0,0,0,.15);
+
 
 justify-self: center;
 text-align: center;
@@ -102,9 +96,7 @@ color: ${props=> props.theme.cores.preto};
 `
 
 export const subtitleInfo = styled.h2`
-  grid-area: subtitle;
-  grid-row: 2;
-  grid-column: 1/4;
+ 
   width: 100%;
   height: 100%;
   margin-top: 1%;
@@ -250,7 +242,7 @@ export const ContainerPlano = styled.section`
     'subtitle subtitle subtitle'
     'plan plan picture';
     gap:20px;
-    grid-template-rows: 40px 60px auto;
+    grid-template-rows: 40px 100px auto;
     background-color:${props=> props.theme.cores.preto2} ;
     background-position: 30% 45%;
     background-color: black;
@@ -351,8 +343,8 @@ export const ul = styled.ul`
     height: 800px;
     border: 4px solid ${props=> props.theme.cores.laranja} ;
     padding: 2%;
-    background-color:${props=> props.theme.cores.talco} ;
-    color:${props=> props.theme.cores.amarelo} ;
+    background-color:${props=> props.theme.cores.preto2} ;
+    color:${props=> props.theme.cores.vermelho} ;
     font-weight: bold;
     font-size: 30px;
     border-radius: 30px;
@@ -386,16 +378,20 @@ export const li = styled.li`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    >a{
+      text-decoration: none;
+    }
   
 
 `
+
 export const planoLista = styled.p`
     width: 100%;
     height: 70px;
     font-size: 30px;
     display: flex;
     background: ${props=> props.theme.cores.preto2};
-    color: ${props=> props.theme.cores.laranja};
+    color: ${props=> props.theme.cores.vermelho};
     font-family: ${props=> props.theme.fonts.titulo} ;
     font-weight: bold ;
     text-align:center;

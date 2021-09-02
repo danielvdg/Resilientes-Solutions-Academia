@@ -38,8 +38,11 @@ export const Nav = styled.div`
 `
 
 export const Link = styled.a`
-    font-size:23px;
-    color:${(props)=> props.theme.cores.laranja};
+    font-size:27px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: "Hind Siliguri";
+    color:rgb(220,29,36);
     text-decoration: none;
     &:active{
        color :${props => props.theme.cores.amarelo} ;
