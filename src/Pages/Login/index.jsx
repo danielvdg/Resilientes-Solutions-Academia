@@ -60,7 +60,7 @@ const Login = () => {
         }   
       }
       else
-        alert('SENHA ERRADA, BABACA!')
+        alert('E-mail ou senha incorretos')
     })
     .catch(error => alert('Login ou senha incorretos'))
  
