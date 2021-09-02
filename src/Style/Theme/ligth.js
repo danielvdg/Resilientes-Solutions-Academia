@@ -17,7 +17,8 @@ export const ligth ={
         platina:'#E8E9EB',
         talco:'#F1F5F2',
         footer:'#738099',
-        cinzaEscuro:'#242933'
+        cinzaEscuro:'#242933',
+        vermelho:'rgb(220,29,36)'
     },
     fonts:{
         texto: '"Hind Siliguri", sans-serif',

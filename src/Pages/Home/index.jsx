@@ -40,7 +40,7 @@ const Home = (props) => {
               <S.li>Aerobicos</S.li>
               <S.li>R$ 49,99</S.li>
               <S.li>
-              <Link to='/cadastro'><Button>Cadastrar</Button></Link>
+              <a href='/cadastro'><Button>Cadastrar</Button></a>
               </S.li>
             </S.ul>
           </S.cardPlano>
