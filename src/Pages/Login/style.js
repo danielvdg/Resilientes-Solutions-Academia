@@ -54,6 +54,7 @@ export const Form = styled.form`
 `
 export const Label = styled.label`
 
+
 &:hover{
     color: ${props=> props.theme.cores.amarelo};
 
@@ -69,7 +70,9 @@ border: none;
 border-radius: 7px;
 width: 50%;
 margin: 0.5em;
+
 border-bottom: 2px solid;
+
 
 
 
@@ -87,20 +90,4 @@ export const Link = styled.div`
 `
 
 
-export const Button = styled.button`
-    font-size: 30px;
-    font-weight: bold;
-    font-family: ${props=> props.theme.fonts.titulo};
-    width: 200px;
-    height: 50px;
-    border: none;
-    background-color: ${props => props.theme.cores.laranja};
-    border-radius: 10px;
-    &:hover{
-        background-color: ${props=> props.theme.cores.amarelo};
-    }   
-    &:active{
-        background-color: ${props=> props.theme.cores.platina};
-    }
-`
 

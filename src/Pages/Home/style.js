@@ -7,21 +7,31 @@ export const Container = styled.div`
    
 `
 export const ContainerInfo = styled.section`
-    display: grid;
-    background-color:${props=> props.theme.cores.talco};
-    width: 100%;
-    height: 100%;
-    grid-template-areas: 
-    'title title title '
-    'subtitle subtitle subtitle '
-    'info info info ';
-    gap:20px;
-    grid-template-rows: 40px 160px auto;
-    grid-template-columns: repeat(3,30%);
-    margin-left:0;
-    justify-items: center;
-    margin-top: 20px;
-    
+
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      height:100vh;
+      background-image: url(https://images.unsplash.com/photo-1589828695526-c461b4ddc158?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjR8fGFiZG9taW5hbCUyMG11c2NsZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+      background-color: black;
+      background-repeat: no-repeat;
+      background-size:50% 100%;
+      bacground-attachment: fixed;
+      >ul{
+        width: 40%;
+        height: 700px;
+        color: white;
+        font-size:30px;
+        text-decoration:none;
+        font-weight: 700; 
+        font-family: ${props=>props.theme.fonts.texto}
+
+      }      
+          
+
     @media screen and (max-width:1300px){
       margin-left:0;
       width: 100%;
