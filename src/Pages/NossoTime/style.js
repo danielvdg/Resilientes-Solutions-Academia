@@ -33,27 +33,18 @@ export const timeTitulo = styled.div`
     justify-content: center;
     align-items: center;
     font-size: 60px;
-    font-family: ${props=> props.theme.fonts.titulo};
-    font-size: 50px;
+    font-family: ${props=> props.theme.fonts.texto};
+   
     width: 100%;
     height: 100%;
-    margin-top: 1%;
+    margin-top: 4%;
     justify-self: center;
     text-align: center;
     align-items: center;
-    color: ${props=> props.theme.cores.branco};
-    text-shadow: 0 1px 0 black, 
-               0 2px 0 #c9c9c9,
-               0 3px 0 #bbb,
-               0 4px 0 #b9b9b9,
-               0 5px 0 black,
-               0 6px 1px rgba(0,0,0,.1),
-               0 0 5px rgba(0,0,0,.1),
-               0 1px 3px rgba(0,0,0),
-               0 3px 5px rgba(0,0,0),
-               0 5px 10px rgba(0,0,0),
-               0 10px 10px rgba(0,0,0),
-               0 20px 20px rgba(0,0,0);
+    color: ${props=> props.theme.cores.vermelho};
+    text-transform: uppercase;
+    font-weight: bold;
+    
 
 
 ` 
@@ -89,6 +80,12 @@ export const ul = styled.ul`
 
 export const li = styled.li`
     display: flex;
+    color: ${props=> props.theme.cores.vermelho};
+    font-family: ${props=> props.theme.fonts.texto};
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+
     
 
 `
