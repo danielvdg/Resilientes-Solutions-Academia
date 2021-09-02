@@ -2,6 +2,9 @@ import {useState, useContext} from 'react';
 import {useHistory, Link} from 'react-router-dom';
 import * as S from './style';
 import {Context} from '../../SessionContext';
+import Button from '../../Components/Button'
+
+
 
 const Login = () => {
   const { session, handleLogin } = useContext(Context);
@@ -73,30 +76,16 @@ const Login = () => {
     <S.Container>
 
       <S.Form>
-<<<<<<< HEAD
-        <S.Label htmlFor="label">E-mail</S.Label>
-        <S.Input id="label" placeholder="E-mail" />              
-        <S.Label>Senha</S.Label>
-        <S.Input placeholder="Senha" />        
-        <Button>Enviar</Button>
-      </S.Form>    
-      <S.Link>Equeceu Senha</S.Link>
-      <S.Link>Cadastre-se</S.Link>
-=======
         <S.Label htmlFor="label">Nome</S.Label>
         <S.Input id="label" value={values.email} onChange={handleInputChange} name="email"/>              
         <S.Label>Senha</S.Label>
         <S.Input value={values.senha} onChange={handleInputChange} name="senha" />        
-        <S.Button onClick={checkLogin}>Enviar</S.Button>
+        <Button onClick={checkLogin}>Enviar</Button>
       </S.Form> 
 
       <Link to="/esqueceusenha">Esqueceu Senha</Link>
       <Link to="/cadastro">Cadastre-se</Link>
 
-<<<<<<< HEAD
->>>>>>> 0e929ef31e31a99c328316f8ad0f86d1f1d05fd7
-=======
->>>>>>> 1af5e1c575a93c531a3091e48a0f009076262614
     </S.Container>
   )
 }

@@ -15,43 +15,12 @@ const Home = (props) => {
   return (
     <S.Container>
       <S.ContainerInfo>
-        <S.tituloInfo>Academia Resilientes </S.tituloInfo>
-        <S.subtitleInfo>
-          A prática da musculação é vista por muitos apenas como uma maneira de
-          aumentar a massa muscular, no entanto esse tipo de atividade física
-          possui inúmeros benefícios, sendo inclusive capaz de combater a
-          depressão, por exemplo. Além disso, a musculação melhora o
-          condicionamento cardiorrespiratório, aumenta a densidade óssea e
-          garante mais disposição física.
-        </S.subtitleInfo>
-        
-        <S.info1>
-          <S.infoTitulo>Vantagens</S.infoTitulo>
-          <S.ulInfo>
-            <S.liInfo>Melhora a postura corporal</S.liInfo>
-            <S.liInfo>Diminui a quantidade de gordura</S.liInfo>
-            <S.liInfo>Tonifica os músculos</S.liInfo>
-            <S.liInfo>Combate problemas emocionais</S.liInfo>
-            <S.liInfo>Aumenta a densidade óssea</S.liInfo>
-            <S.liInfo> Diminui o risco de diabetes</S.liInfo>
-            <S.liInfo> Melhora o condicionamento cardiorrespiratório</S.liInfo>
-          </S.ulInfo>
-        </S.info1>
-        <S.info2 >
-          <img src={imgInfo} alt='imagem info' />
-        </S.info2>
-        <S.info3>
-          <S.infoTitulo>Importância</S.infoTitulo>
-          <S.pInfo>
-            A prática de atividade física é, sem dúvida, essencial para
-            aumentarmos nossa qualidade de vida. Inúmeros estudos demonstram
-            como a prática frequente de atividade física evita doenças e
-            melhora, até mesmo, nossa disposição para a realização de nossas
-            atividades diárias. A seguir, listaremos os principais benefícios de
-            se praticar atividades físicas e também os riscos de se ter uma vida
-            sedentária.
-          </S.pInfo>
-        </S.info3>
+      <S.titulo>Resilientes Solutions Academia</S.titulo>
+      <ul>
+        <li><h1>Conquiste o seu corpo perfeito</h1></li>
+        <li><h4>Comece</h4></li>
+        <li><h1>HOJE</h1></li>
+      </ul>
       </S.ContainerInfo>
 
       <S.ContainerPlano>
