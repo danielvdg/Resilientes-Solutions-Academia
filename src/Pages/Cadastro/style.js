@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
 export const Main = styled.main`
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700;800;900&display=swap');
-
+    
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700;800;900&display=swap');
     background-image: url('https://wallpapercave.com/wp/wp2356258.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    height: 82.1vh;
+    height: 88vh;
 `
 
 export const Form = styled.form`
     width : 50%;
-    height: 50%;
+    height: 42%;
     align-self: center;
     justify-self: center;
     text-align: center;
@@ -76,6 +76,6 @@ export const Text = styled.div`
 
 export const Label = styled.label`
     font-weight:700;
-    font-size-20px;
+    font-size: 24px;
     font-family: 'Kanit', sans-serif;
 `
