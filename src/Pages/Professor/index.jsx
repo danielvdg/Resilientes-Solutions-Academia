@@ -30,7 +30,7 @@ const Professores = () => {
                     <S.li>Nome: Paulo Muzzy</S.li>
                     <S.li>Idade: 32 anos</S.li>
                     <S.li>Formação: Medicina </S.li>
-                    <S.li>Especializaçõ: Medicina Aplicada ao Esporte </S.li>
+                    <S.li>Especialização: Medicina Aplicada ao Esporte </S.li>
                 </S.ul>
                 </S.profPerfil>
             </S.containerPerfil2>
