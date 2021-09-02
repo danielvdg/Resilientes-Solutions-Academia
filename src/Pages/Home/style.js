@@ -27,7 +27,7 @@ export const ContainerInfo = styled.section`
 
       background-size:900px 1100px;
       background-attachment: fixed;
-      font-family: ${props=> props.theme.fonts.subtitulo};
+      font-family: ${props=> props.theme.fonts.texto};
       text-transform: uppercase;
        
 
@@ -43,15 +43,16 @@ export const ContainerInfo = styled.section`
         color: white;
         font-size:49px;
         font-weight: 700; 
-         font-family: ${props=>props.theme.fonts.texto}
+         font-family: ${props=>props.theme.fonts.texto};
         text-transform: uppercase;
         list-style: none;
         
-      }      
+            
 
          
-          h1{
+        h1{
           color:${props => props.theme.cores.vermelho};
+          
         }
         h4{
           color: rgb(255,255,255);
@@ -73,7 +74,7 @@ export const ContainerInfo = styled.section`
       background-position: center;
 
     }
-    
+   
    
 `
 
