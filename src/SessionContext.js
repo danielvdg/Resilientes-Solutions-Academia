@@ -1,9 +1,14 @@
 import React, {createContext, useEffect, useState} from 'react';
+import Cookies from 'universal-cookie';
 
 export const Context = createContext();
 
 export default function Session({ children }) {
-    const [session, setSession] = useState({ aluno: 0 })
+    const cookies = new Cookies();
+ 
+    var cookieStorage = cookies.get('sessaoAluno');
+
+    const [session, setSession] = useState({ aluno: cookieStorage })
 
     const [loading, setLoading] = useState(true)
 
@@ -16,7 +21,9 @@ export default function Session({ children }) {
     }
 
     function handleLogout(){
-        setSession({ aluno: 0 })
+        cookies.remove('sessaoAluno')
+        cookies.remove('x')
+        window.location.href = './'
     }
 
     if(loading){
