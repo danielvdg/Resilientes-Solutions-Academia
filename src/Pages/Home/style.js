@@ -7,6 +7,7 @@ export const Container = styled.div`
    
 `
 export const ContainerInfo = styled.section`
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -28,11 +29,7 @@ export const ContainerInfo = styled.section`
         font-family: ${props=>props.theme.fonts.texto}
 
       }      
-      >li{
-        
-      }
-
-    
+          
     @media screen and (max-width:1300px){
       margin-left:0;
       width: 100%;
@@ -202,6 +199,8 @@ export const liInfo = styled.li`
   text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
   justify-content: center;
   align-items: center;
+  
+ 
 
 `
 export const pInfo = styled.p`
@@ -359,6 +358,9 @@ export const li = styled.li`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    >a{
+      text-decoration: none;
+    }
   
 
 `
