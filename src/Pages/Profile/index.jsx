@@ -1,15 +1,16 @@
 import { useContext, useEffect, useState } from 'react';
 import {Context} from '../../SessionContext';
 import Cookies from 'universal-cookie';
-import * as S from './style'
+import * as S from './style';
+import Button from '../../Components/Button';
 
 export default function Profile(props){
     const { session, handleLogout} = useContext(Context);
 
     const cookies = new Cookies();
 
-    const [dados, setDados] = useState([])
-    console.log(session)
+    const [dados, setDados] = useState([]);
+    const [treinos, setTreinos] = useState([]);
 
     const getData = async () => {
         if(session.aluno>0){
@@ -36,13 +37,29 @@ export default function Profile(props){
                     window.location.href = "./";
             })
             .catch(error => console.log(error))
+
         }
         else
             window.location.href = "./";
     }
     
+    const getDataTreino = async () => {
+        const url = 'https://safe-fjord-35975.herokuapp.com/treino/ver';
+        const options = {method: 'GET'}
+        await fetch(url,options)
+        .then(response => response.json())
+        .then(data => {
+            setTreinos(data)
+            if(data){
+                localStorage.setItem('treinos', JSON.stringify(data.result));
+            }
+        })
+        .catch(error => console.log(error))
+    }
+
     useEffect(() => {
         getData()
+        getDataTreino()
     },[])
 
     const deleteA = async () => {
@@ -60,7 +77,6 @@ export default function Profile(props){
         "email":   ''
     }
     const [values, setValues] = useState(initialValues);
-    console.log(values)
     const handleInputChange = (e) => {
         const { name, value} = e.target;
         setValues({
@@ -85,29 +101,33 @@ export default function Profile(props){
         })
         .catch(error => console.log(error))
     }
+
     return(
         <S.Container>
-            <div>
+            <S.TituloWrapper>
                 <S.Titulo>Bem vindo, {cookies.get('nomeAluno')}!</S.Titulo>
-                
-                <form>
-                    <label>Sua informações:</label>
+            </S.TituloWrapper>
+            <S.FormWrapper>   
+                <S.Form>
+                    <h2>Sua informações:</h2>
                     <br></br>
-                    <label>{cookies.get('nomeAluno')}</label>
-                    <input placeholder="Altere seu nome" value={values.nome} onChange={handleInputChange} name="nome"></input>
-                    <br></br>
-                    <label>{cookies.get('emailAluno')}</label>
-                    <input placeholder="Altere seu e-mail" value={values.email} onChange={handleInputChange} name="email"></input>
-                    <br></br>
+                    <div>
+                        <label>{cookies.get('nomeAluno')}</label>
+                        <br></br>
+                        <label>{cookies.get('emailAluno')}</label>
+                    </div>
+                    <div>
+                    <S.Input placeholder="Altere seu nome" value={values.nome} onChange={handleInputChange} name="nome"></S.Input>
+                    <S.Input placeholder="Altere seu e-mail" value={values.email} onChange={handleInputChange} name="email"></S.Input>
+                    </div>
+                    
+                    <button onClick={deleteA}>Deletar sua conta</button>
+                    <button onClick={handleLogout}>Deslogar</button>
                     <button onClick={updateData}>Alterar dados</button>
-                </form>
-                <button onClick={deleteA}>Deletar sua conta</button>
-                <button onClick={handleLogout}>Deslogar</button>
-            </div>
-
-            <div>
-
-            </div>
+                </S.Form>
+                
+            </S.FormWrapper>
         </S.Container>
     )
 }
+
