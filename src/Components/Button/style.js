@@ -17,7 +17,7 @@ export const Button = styled.button`
     width: 200px;
     height: 50px;
     border: none;
-    background-color: ${props => props.theme.cores.laranja};
+    background-color:rgb(220,29,36);
     border-radius: 10px;
     &:hover{
         background-color: ${props=> props.theme.cores.amarelo};

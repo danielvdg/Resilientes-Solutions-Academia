@@ -18,6 +18,28 @@ export const ContainerInfo = styled.section`
       background-repeat: no-repeat;
       background-size:50% 100%;
       bacground-attachment: fixed;
+      z-index: 6;
+      white-space: nowrap;
+      font-size: 49px;
+      line-height: 49px;
+      font-weight: 700;
+      color: rgb(220, 29, 36);
+      letter-spacing: 0px;
+      font-family: "Hind Siliguri";
+      text-transform: uppercase;
+      visibility: inherit;
+      transition: none 0s ease 0s;
+      text-align: inherit;
+      border-width: 0px;
+      margin: 0px;
+      padding: 0px;
+      min-height: 0px;
+      min-width: 0px;
+      max-height: none;
+      max-width: none;
+      opacity: 1;
+      transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+      transform-origin: 50% 50% 0px;
       >ul{
         width: 40%;
         height: 700px;
@@ -26,9 +48,9 @@ export const ContainerInfo = styled.section`
         text-decoration:none;
         font-weight: 700; 
         font-family: ${props=>props.theme.fonts.texto}
-
       }      
       >li{
+        
         
       }
 
