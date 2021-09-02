@@ -18,8 +18,8 @@ export const ContainerInfo = styled.section`
     gap:20px;
     grid-template-rows: 40px 160px auto;
     grid-template-columns: repeat(3,30%);
+    margin-left:0;
     justify-items: center;
-    margin-left: 5%;
     margin-top: 20px;
     
     @media screen and (max-width:1300px){

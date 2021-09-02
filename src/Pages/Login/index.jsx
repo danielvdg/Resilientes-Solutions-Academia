@@ -93,7 +93,10 @@ const Login = () => {
       <Link to="/esqueceusenha">Esqueceu Senha</Link>
       <Link to="/cadastro">Cadastre-se</Link>
 
+<<<<<<< HEAD
 >>>>>>> 0e929ef31e31a99c328316f8ad0f86d1f1d05fd7
+=======
+>>>>>>> 1af5e1c575a93c531a3091e48a0f009076262614
     </S.Container>
   )
 }

@@ -53,9 +53,13 @@ export const Form = styled.form`
 `
 export const Label = styled.label`
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 0e929ef31e31a99c328316f8ad0f86d1f1d05fd7
+=======
+
+>>>>>>> 1af5e1c575a93c531a3091e48a0f009076262614
 &:hover{
     color: ${props=> props.theme.cores.amarelo};
 
@@ -89,7 +93,11 @@ export const Link = styled.div`
 `
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+
+>>>>>>> 1af5e1c575a93c531a3091e48a0f009076262614
 export const Button = styled.button`
     font-size: 30px;
     font-weight: bold;
@@ -106,4 +114,8 @@ export const Button = styled.button`
         background-color: ${props=> props.theme.cores.platina};
     }
 `
+<<<<<<< HEAD
 >>>>>>> 0e929ef31e31a99c328316f8ad0f86d1f1d05fd7
+=======
+
+>>>>>>> 1af5e1c575a93c531a3091e48a0f009076262614
