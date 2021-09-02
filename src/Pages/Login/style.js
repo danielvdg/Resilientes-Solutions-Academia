@@ -10,13 +10,9 @@ height:88vh;
 background-image: url(https://images.unsplash.com/photo-1434682881908-b43d0467b798?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80);
 background-repeat: no-repeat;
 background-size: cover;
-<<<<<<< HEAD
-bacground-attachment: fixed;
+background-attachment: fixed;
 font-family: "Hind Siliguri";
 text-transform: uppercase;
-=======
-background-attachment: fixed;
->>>>>>> 6726d398c16e186de5e56a93d1ad551f3c77a545
 margin: auto auto;
 
 
