@@ -6,13 +6,7 @@ export default function Form(props) {
         "nome":    '',
         "senha":   '',
         "cpf":     '', 
-        "email":   '',
-        "telefone":'',
-        "idade":   '',
-        "cep":     '',     
-        "bairro":  '',   
-        "rua":     '',      
-        "numero":  ''
+        "email":   ''
     }
 
     const [values, setValues] = useState(initialValues);
@@ -29,7 +23,7 @@ export default function Form(props) {
     const submit = async (e) => {
         e.preventDefault();
     
-        const urlCadastro = 'https://calm-inlet-01792.herokuapp.com/aluno'
+        const urlCadastro = 'https://safe-fjord-35975.herokuapp.com/aluno'
         const options = {
             method: 'POST',
             headers: {'Accept': 'application/json','Content-Type': 'application/json'},
@@ -43,40 +37,17 @@ export default function Form(props) {
 
     }
 
-    const cpf = parseInt(values.cpf)
-    const telefone = parseInt(values.telefone)
-    const idade = parseInt(values.idade)
-    const cep = parseInt(values.cep)
-    const numero = parseInt(values.numero)
-    values.cpf = cpf
-    values.telefone = telefone
-    values.idade = idade
-    values.cep = cep
-    values.numero = numero
-
     return(
-        <form onSubmit={submit}>
-            <S.Input value={values.nome} onChange={handleInputChange} name="nome" label="nome"/>
+        <form>
+            <S.Input value={values.nome} onChange={handleInputChange} name="nome" label="nome" placeholder="Nome"/>
 
-            <S.Input value={values.senha} onChange={handleInputChange} name="senha" label="senha"/>
+            <S.Input value={values.senha} onChange={handleInputChange} name="senha" label="senha" placeholder="Senha"/>
 
-            <S.Input value={values.cpf} onChange={handleInputChange} name="cpf" label="nome" type="number"/>
+            <S.Input value={values.cpf} onChange={handleInputChange} name="cpf" label="nome" placeholder="CPF"/>
             
-            <S.Input value={values.email} onChange={handleInputChange} name="email" label="nome"/>
+            <S.Input value={values.email} onChange={handleInputChange} name="email" label="nome" placeholder="E-mail"/>
 
-            <S.Input value={values.telefone} onChange={handleInputChange} name="telefone" label="telefone" type="number"></S.Input>
-            
-            <S.Input value={values.idade} onChange={handleInputChange} name="idade" label="idade" type="number"></S.Input>
-            
-            <S.Input value={values.cep} onChange={handleInputChange} name="cep" label="cep" type="number"></S.Input>
-            
-            <S.Input value={values.bairro} onChange={handleInputChange} name="bairro" label="bairro"></S.Input>
-            
-            <S.Input value={values.rua} onChange={handleInputChange} name="rua" label="rua"></S.Input>
-
-            <S.Input value={values.numero} onChange={handleInputChange} name="numero" label="numero" type="number"></S.Input>
-
-            <button>Cadastrar</button>
+            <button onClick={submit}>Cadastrar</button>
         </form>   
     )
 }

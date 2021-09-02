@@ -52,7 +52,10 @@ export const Form = styled.form`
 
 `
 export const Label = styled.label`
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0e929ef31e31a99c328316f8ad0f86d1f1d05fd7
 &:hover{
     color: ${props=> props.theme.cores.amarelo};
 
@@ -85,3 +88,22 @@ export const Link = styled.div`
 
 `
 
+<<<<<<< HEAD
+=======
+export const Button = styled.button`
+    font-size: 30px;
+    font-weight: bold;
+    font-family: ${props=> props.theme.fonts.titulo};
+    width: 200px;
+    height: 50px;
+    border: none;
+    background-color: ${props => props.theme.cores.laranja};
+    border-radius: 10px;
+    &:hover{
+        background-color: ${props=> props.theme.cores.amarelo};
+    }   
+    &:active{
+        background-color: ${props=> props.theme.cores.platina};
+    }
+`
+>>>>>>> 0e929ef31e31a99c328316f8ad0f86d1f1d05fd7
