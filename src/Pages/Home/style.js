@@ -7,6 +7,8 @@ export const Container = styled.div`
    
 `
 export const ContainerInfo = styled.section`
+
+
       display: flex;
       justify-content: center;
       align-items: center;
@@ -49,12 +51,15 @@ export const ContainerInfo = styled.section`
         font-weight: 700; 
         font-family: ${props=>props.theme.fonts.texto}
       }      
+<<<<<<< HEAD
       >li{
         
         
       }
+=======
+          
+>>>>>>> 6726d398c16e186de5e56a93d1ad551f3c77a545
 
-    
     @media screen and (max-width:1300px){
       margin-left:0;
       width: 100%;

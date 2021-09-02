@@ -19,6 +19,7 @@ export const Button = styled.button`
     border: none;
     background-color:rgb(220,29,36);
     border-radius: 10px;
+    
     &:hover{
         background-color: ${props=> props.theme.cores.amarelo};
     }   

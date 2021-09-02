@@ -8,9 +8,19 @@ export const Container = styled.div`
     grid-template-areas: 
     'title title'
     'subtitle subtile'
-    'perfil perfil';
-    grid-template-rows: 50px 70px  200px;
+    'perfil perfil'
+    'intergrantes intergrantes';
+    
+    grid-template-rows: 70px 70px  auto;
     gap: 20px;
+
+    @media screen and ( max-height:1000px){
+       height: 100%;
+    }
+    
+    @media screen and ( max-width:1600px){
+       width: 100%;
+    }
 
 ` 
 export const timeTitulo = styled.div`
@@ -50,36 +60,30 @@ export const timeTitulo = styled.div`
 export const containerPerfil =styled.div`
     grid-area: perfil;  
     width: 100%;
-    height: 450px ;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    
- `
-export const timePerfil = styled.div`
-    display:flex;
-    justify-content: flex-start;
-    width:80%;
-    height: 200px;
-
-    >img{
-        width:350px;
-        height: 320px;
-        display: block;
-
-    }
-    
-
-`
-export const ul = styled.ul`
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+
+    
+    
+    >img{
+        width:1500px;
+        height:700px;
+        
+
+    }
+ `
+
+export const ul = styled.ul`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    width: 80%;
     height: 100%;
-    border:1px solid white;
+    /* border:1px solid white; */
 
 `
 
