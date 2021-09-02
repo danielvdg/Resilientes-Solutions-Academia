@@ -12,8 +12,9 @@ export const  footer = styled.footer`
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    background-color: ${props=> props.theme.cores.footer};
-    font-family: ${props=> props.theme.fonts.titulo};
+    background-color: ${props=> props.theme.cores.preto};
+    font-family: ${props=> props.theme.fonts.texto};
+    color:${props => props.theme.cores.vermelho};
 
     
 `

@@ -280,7 +280,7 @@ export const titulo = styled.h1`
 grid-area: title;
 grid-column: 1/ 4;
 grid-row: 1;
-font-family: ${props=> props.theme.fonts.titulo};
+font-family: ${props=> props.theme.fonts.texto};
 font-size: 50px;
 width: 100%;
 height: 100%;
@@ -299,8 +299,9 @@ export const subtitle = styled.h2`
   height: 100%;
   text-align: center;
   margin-top: 1%;
-  font-family: ${props=> props.theme.fonts.subtitulo};
+  font-family: ${props=> props.theme.fonts.texto};
   color: ${props=> props.theme.cores.branco};
+  text-transform: uppercase;
   font-size: 35px;
 
 `

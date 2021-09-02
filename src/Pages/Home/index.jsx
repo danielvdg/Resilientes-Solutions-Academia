@@ -4,6 +4,7 @@ import React,{Link} from "react-router-dom";
 //import imagens
 import imagemPlano from "../../Img/imagem1.png";
 import imgInfo from '../../Img/ImgInfo1.png'
+import { Animated } from "react-animated-css";
 
 
 //import estilo
@@ -16,7 +17,9 @@ const Home = (props) => {
   return (
     <S.Container>
       <S.ContainerInfo>
+      <Animated animationIn="zoomIn">
       <S.titulo>Resilientes Solutions Academia</S.titulo>
+      </Animated>
       <ul>
         <li><h1>Conquiste o seu corpo perfeito</h1></li>
         <li><h4>Comece</h4></li>
@@ -25,10 +28,9 @@ const Home = (props) => {
       </S.ContainerInfo>
 
       <S.ContainerPlano>
-        <S.titulo>Escolha um dos Nossos Plano</S.titulo>
+        <S.titulo>Escolha um dos nossos planos</S.titulo>
         <S.subtitle>
-          Treine o quanto quiser com nossos planos. Todos oferecem áreas de
-          musculação, aeróbico, aulas especiais e de ginástica
+          Treine o quanto quiser! 
         </S.subtitle>
         <S.plano>
           <S.cardPlano>
