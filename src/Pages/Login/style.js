@@ -10,7 +10,13 @@ height:88vh;
 background-image: url(https://images.unsplash.com/photo-1434682881908-b43d0467b798?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1053&q=80);
 background-repeat: no-repeat;
 background-size: cover;
+<<<<<<< HEAD
+bacground-attachment: fixed;
+font-family: "Hind Siliguri";
+text-transform: uppercase;
+=======
 background-attachment: fixed;
+>>>>>>> 6726d398c16e186de5e56a93d1ad551f3c77a545
 margin: auto auto;
 
 
@@ -28,8 +34,8 @@ export const Form = styled.form`
     font-size: 30px;
     display: flex;
     background: ${props=> props.theme.cores.preto2};
-    color: ${props=> props.theme.cores.laranja};
-    font-family: ${props=> props.theme.fonts.titulo} ;
+    color: rgb(220, 29, 36);
+    font-family: "Hind Siliguri";
     font-weight: bold ;
     text-align:center;
     align-items: center;
@@ -41,14 +47,10 @@ export const Form = styled.form`
    
     
     @media screen and (max-width: 800px ){
-        width  :50% ;
-      
+        width  :50% ;      
           
       }
-      &:hover{
-        border: 4px solid ${props=> props.theme.cores.amarelo}
-        
-      }
+      
 
 
 `
@@ -83,7 +85,7 @@ export const Link = styled.div`
     color: #b3b3b3;
     font-size: 15px;
     &:hover{
-        color: ${props=> props.theme.cores.branco};
+        color: ${props=> props.theme.cores.amarelo};
     }
    
 

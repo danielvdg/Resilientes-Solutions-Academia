@@ -22,8 +22,7 @@ export const ligth ={
     },
     fonts:{
         texto: '"Hind Siliguri", sans-serif',
-        titulo: '"Hind Siliguri", sans-serif',
-        subtitulo: '"Hind Siliguri", cursive'
+       
     }
     
 }

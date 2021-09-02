@@ -24,11 +24,13 @@ export const ContainerInfo = styled.section`
       background-position: -1.5% 0;
       background-color: black;
       background-repeat: no-repeat;
+
       background-size:900px 1100px;
       background-attachment: fixed;
       font-family: ${props=> props.theme.fonts.subtitulo};
       text-transform: uppercase;
        
+
       >ul{
         grid-area: content;
         grid-row: 2;
@@ -38,12 +40,16 @@ export const ContainerInfo = styled.section`
         width: 100%;
         height: 700px;
         justify-content: center;
-        color:white;
+        color: white;
         font-size:49px;
-        font-weight: 700;
-        font-family: "Hind Siliguri";
+        font-weight: 700; 
+         font-family: ${props=>props.theme.fonts.texto}
         text-transform: uppercase;
         list-style: none;
+        
+      }      
+
+         
           h1{
           color:${props => props.theme.cores.vermelho};
         }
@@ -54,7 +60,7 @@ export const ContainerInfo = styled.section`
       } 
       
       
-          
+
 
     @media screen and (max-width:1400px){
      
