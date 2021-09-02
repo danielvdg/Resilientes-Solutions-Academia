@@ -2,6 +2,9 @@ import {useState, useContext} from 'react';
 import {useHistory, Link} from 'react-router-dom';
 import * as S from './style';
 import {Context} from '../../SessionContext';
+import Button from '../../Components/Button'
+
+
 
 const Login = () => {
   const { session, handleLogin } = useContext(Context);
@@ -77,7 +80,7 @@ const Login = () => {
         <S.Input id="label" value={values.email} onChange={handleInputChange} name="email"/>              
         <S.Label>Senha</S.Label>
         <S.Input value={values.senha} onChange={handleInputChange} name="senha" />        
-        <S.Button onClick={checkLogin}>Enviar</S.Button>
+        <Button onClick={checkLogin}>Enviar</Button>
       </S.Form> 
 
       <Link to="/esqueceusenha">Esqueceu Senha</Link>
