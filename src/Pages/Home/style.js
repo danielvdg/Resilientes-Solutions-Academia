@@ -74,7 +74,8 @@ export const ContainerInfo = styled.section`
       background-position: center;
 
     }
-   
+
+     
    
 `
 
@@ -289,6 +290,7 @@ justify-self: center;
 text-align: center;
 align-items: center;
 color: ${props=> props.theme.cores.branco};
+
 
 `
 export const subtitle = styled.h2`
