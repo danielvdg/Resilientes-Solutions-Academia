@@ -1,14 +1,17 @@
 # Projeto de encerramento de módulo 5: Resilientes-Solutions-Academia
 
+Este projeto compreende o desenvolvimento de um site para atendender uma ACADEMIA, seguindo o padrão MVC (Model-View-Controller). 
 
-Este site foi elaborado para atendender uma ACADEMIA, contem API REST foi e executa a leitura, inclusão, exclusão
-e alteração das informações do banco de dados TREINO e ALUNOS.
+O site desenvolvido é uma continuação do projeto anterior, portanto ele utiliza as APIs REST já criadas no ultimo módulo (Projeto de encerramento de módulo 4)  e faz a integração destas APIs com a camada de interação do usuário (view). 
 
 
 ## Appendix
 
+As API REST foram elaboradas para executar a leitura, inclusão, exclusão e alteração das informações do banco de dados TREINO e ALUNO.
+
 O Banco de dados é composto por 5 colunas 
-ID, MUSCULO, EXERCICIO, SERIES e REPETICOES
+ID, MUSCULO, EXERCICIO, SERIES e REPETICOES (TREINO)
+ID, NOME, EXERCICIO, SERIES e REPETICOES (ALUNO)
 
   
 ## Demo
