@@ -1,8 +1,8 @@
 # Projeto de encerramento de módulo 5: Resilientes-Solutions-Academia
 
 
-Este site foi elaborado para atendender uma ACADEMIA API REST foi e executa a leitura, inclusão, exclusão
-e alteração das informações do banco de dados TREINO.
+Este site foi elaborado para atendender uma ACADEMIA, contem API REST foi e executa a leitura, inclusão, exclusão
+e alteração das informações do banco de dados TREINO e ALUNOS.
 
 
 ## Appendix
